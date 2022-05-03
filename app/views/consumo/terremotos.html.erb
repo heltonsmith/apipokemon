@@ -1,0 +1,17 @@
+
+<h1>Fecha: <%= @resultado[0]["Fecha"] %></h1>
+<h1>Profundidad: <%= @resultado[0]["Profundidad"] %></h1>
+<h1>Magnitud: <%= @resultado[0]["Magnitud"] %></h1>
+<h1>Ubicación: <%= @resultado[0]["RefGeografica"] %></h1>
+
+<br><br><hr>
+
+<% @resultado.each do |objeto| %>
+
+    <h1>Fecha: <%= objeto["Fecha"] %></h1>
+    <h1>Profundidad: <%= objeto["Profundidad"] %></h1>
+    <h1>Magnitud: <%= objeto["Magnitud"] %></h1>
+    <h1>Ubicación: <%= objeto["RefGeografica"] %></h1>
+    <br><hr>
+
+<% end %>
